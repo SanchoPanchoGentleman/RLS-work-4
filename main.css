@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /*background: url("https://wallpaper.dog/large/10844581.jpg") fixed; Это для темной темы*/
+    /*background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612811243_104-p-biryuzovii-gradient-fon-119.jpg") fixed;*/
+    background: linear-gradient(to bottom, #e7cec7 30%, #e7cec7 50%);
+
+}
+
+
+/*Это раздел шапки основной страницы*/
+.navbar {
+    animation-name: anim;
+    animation-duration: 2s;
+    position: relative;
+
+
+    margin-bottom: 40vw;
+    text-align: center;
+
+    padding: 100px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to bottom, #bcccdd 10%, #8595a5 90%);
+    font-size: 5vh;
+    color: #ffffff;
+}
+
+@keyframes anim {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+
+.welcome-text {
+
+
+}
+
+
+#text-in-div {
+    position: relative;
+    top: 20vw;
+    height: 42vw;
+    width: auto;
+    margin: 20vw auto;
+    padding: 2vw;
+
+    box-shadow: 0 0 3vw black;
+    text-shadow: 1vw 1vw 3vw black;
+    text-align: center;
+    line-height: 8vw;
+
+    background: linear-gradient(to top, #8595a5 40%, #878287 100%);
+
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.carousel-indicators{
+    position: relative;
+    top: 35vw;
+}
+
+.carousel-control-prev-icon {
+    position: relative;
+    top: 20vw;
+}
+
+.carousel-control-next-icon  {
+    position: relative;
+    top: 20vw;
+
+}
+
+.carousel-inner {
+    display: block;
+    justify-content: center;
+    width: 80%;
+
+    position: relative;
+    top: 13vw;
+}
+
+.carousel-item {
+    display: block;
+    justify-content: center;
+    width: 50%;
+
+    text-shadow: 1vh 1vh 1vw black;
+    font-family: "Open Sans 700", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.images {
+    display: none;
+    float: left;
+    box-shadow: 1vw 1vw 2vw black;
+
+    padding: 2vh;
+    margin: 2vw;
+
+    height: max-content;
+    width: 300px;
+
+    background: linear-gradient(to top, #bcccdd 10%, #8595a5 90%) ;
+    border-radius: 2vw;
+
+    position: relative;
+    top: 5vw;
+}
+
+.card-img-top {
+
+    border-radius: 10%;
+
+}
+
+.btn-primary {
+    background-color: #00b0aa;
+    width: 100px;
+
+}
+/*Добавить в корзину кнопка дизайн*/
+.cart-icon {
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+
+
+/*Filter buttons of dress*/
+#myBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
+
+}
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn-filter {
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 1vw;
+    font-size: 30px;
+    color: white;
+    background-color: #8595a5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn-filter:hover {
+    background-color: #ddd;
+}
+/* Add a dark background to the active button */
+.btn-filter.active {
+    background-color: #666;
+    color: white;
+}
+
+
+
+
+/*Snackbars code css*/
+
+#snck1 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck2 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck3 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck4 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck5 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck6 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck7 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck8 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck9 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck10 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck11 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck12 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snck1.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck2.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck3.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck4.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck5.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck6.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck7.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck8.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck9.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck10.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck11.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck12.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+.text {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 100px;
+    padding: 10px;
+    text-decoration: none;
+}
+footer {
+    position: relative;
+    top: 500px;
+    background-color: rgba(21, 21, 21, 0.85);
+    padding: 100px;
+
+}
+

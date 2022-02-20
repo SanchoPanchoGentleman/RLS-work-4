@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {          /*Убрать отступы от краев страницы*/
+    margin: 0;
+    padding: 0;
+    background-color: #e7cec7;
+
+}
+
+#header-fon{
+    background-color: white;
+}
+
+#header-text{
+
+
+    position: relative;
+    top:100px;
+    color: #878287;
+    text-shadow: 3px 3px  5px #f6b7b2;
+    text-align: center;
+    font-size: 5vw;
+}
+#header-p{
+
+    position: relative;
+    top:100px;
+    text-align: center;
+    color: #f6b7b2;
+    text-shadow: 3px 3px  5px #100f0f;
+    font-size: 30px;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.images {
+
+    float: left;
+    box-shadow: 1vw 1vw 2vw black;
+
+    padding: 2vh;
+    margin: 2vw;
+
+    height: max-content;
+    width: 300px;
+
+    background: linear-gradient(to top, #bcccdd 10%, #8595a5 90%) ;
+    border-radius: 2vw;
+
+    position: relative;
+    top: 5vw;
+}
+
+.card-img-top   {
+
+    border-radius: 10%;
+
+}
+
+.btn-primary {
+    background-color: #6c757d;
+    width: 100px;
+}
+/*Добавить в корзину кнопка дизайн*/
+.cart-icon {
+    position: relative;
+    top: 5px;
+    left: 50px;
+}
+
+
+/*Snackbars code css*/
+
+#snck1 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck2 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck3 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck4 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck5 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+#snck6 {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #284d0e; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 50px; /* 50px from the bottom */
+}
+
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snck1.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck2.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck3.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck4.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck5.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snck6.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+.text {
+    text-align: left;
+    color: #6c757d;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    margin-left: 50px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+footer {
+    position: relative;
+    top: 10vw;
+    background-color: white;
+    padding: 30px;
+}
+#fon {
+    height: 27vw;
+    width: 50vw;
+
+}

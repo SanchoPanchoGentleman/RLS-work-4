@@ -1,0 +1,49 @@
+body {
+    background: #b93232;
+}
+
+h1 {
+    position: relative;
+
+
+    left: 25vw;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 10vw;
+
+}
+
+h2 {
+    position: relative;
+
+
+    left: 5vw;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 3vw;
+}
+
+h3 {
+    position: relative;
+
+
+    left: 5vw;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 3vw;
+}
+
+h4 {
+    position: relative;
+
+
+    left: 5vw;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 3vw;
+}
+
