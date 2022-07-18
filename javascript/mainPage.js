@@ -44,10 +44,10 @@ for (let i = 0; i < btns.length; i++) {
     });
 }
 
-
-let myName=prompt("What is your name?");
-let result = myName[0].toUpperCase() + myName.slice(1).toLowerCase();
-alert("Hello, " + result + ". We wish you a happy shopping!");
+//Окно появляющееся при входе на страницу и спрашивающее имя пользователя
+// let myName=prompt("What is your name?");
+// let result = myName[0].toUpperCase() + myName.slice(1).toLowerCase();
+// alert("Hello, " + result + ". We wish you a happy shopping!");
 
 
 // Buttons for cart animation

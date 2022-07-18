@@ -7,19 +7,18 @@ body {
     padding: 0;
     /*background: url("https://wallpaper.dog/large/10844581.jpg") fixed; Это для темной темы*/
     /*background: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612811243_104-p-biryuzovii-gradient-fon-119.jpg") fixed;*/
-    background: linear-gradient(to bottom, #e7cec7 30%, #e7cec7 50%);
+    background: linear-gradient(to bottom, #c7e7e3 30%, #c7dae7 50%);
 
 }
 
 
 /*Это раздел шапки основной страницы*/
 .navbar {
-    animation-name: anim;
-    animation-duration: 2s;
+
     position: relative;
 
 
-    margin-bottom: 40vw;
+    /*margin-bottom: 40vw;*/
     text-align: center;
 
     padding: 100px;
@@ -32,14 +31,6 @@ body {
     color: #ffffff;
 }
 
-@keyframes anim {
-    from {
-        top: -300px;
-    }
-    to {
-        top: 0;
-    }
-}
 
 
 .welcome-text {
@@ -119,10 +110,10 @@ body {
     margin: 2vw;
 
     height: max-content;
-    width: 300px;
+    width: 500px;
 
     background: linear-gradient(to top, #bcccdd 10%, #8595a5 90%) ;
-    border-radius: 2vw;
+    border-radius: 1vw;
 
     position: relative;
     top: 5vw;
@@ -130,7 +121,7 @@ body {
 
 .card-img-top {
 
-    border-radius: 10%;
+    /*border-radius: 10%;*/
 
 }
 
@@ -440,7 +431,7 @@ body {
 }
 footer {
     position: relative;
-    top: 500px;
+    top: 300px;
     background-color: rgba(21, 21, 21, 0.85);
     padding: 100px;
 
